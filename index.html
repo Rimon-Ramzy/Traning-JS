@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traning JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Start Settings Box -->
+  <div class="settings-box">
+    <div class="gear-box">
+      <i class="fa fa-gear"></i>
+    </div>
+    <div class="settings-container">
+      <div class="option-box">
+        <h4>Colors</h4>
+        <ul class="color-list">
+          <li class="active" data-color="#ff6f00"></li>
+          <li data-color="#E91E63"></li>
+          <li data-color="#009688"></li>
+          <li data-color="#03A9F4"></li>
+          <li data-color="#4CAF50"></li>
+        </ul>
+      </div>
+      <div class="option-box">
+        <h4>Random Backgrounds</h4>
+        <div class="random-background">
+          <span class="yes active" data-background="yes">Yes</span>
+          <span class="no" data-background="no">No</span>
+        </div>
+      </div>
+      <div class="option-box">
+        <h4>Choose Background</h4>
+        <div class="choose-bg">
+          <div class="img-one">
+            <img src="images/1.jpg" alt="">
+          </div>
+          <div class="img-two">
+            <img src="images/2.jpg" alt="">
+          </div>
+          <div class="img-three">
+            <img src="images/3.jpg" alt="">
+          </div>
+          <div class="img-four">
+            <img src="images/4.jpg" alt="">
+          </div>
+          <div class="img-five">
+            <img src="images/5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="option-box">
+        <h4>Show Nav Bullets</h4>
+        <div class="nav-bullets-choise">
+          <span class="show active" data-nav="show">Yes</span>
+          <span class="hide" data-nav="hide">No</span>
+        </div>
+      </div>
+      <div class="reset">Reset Options</div>
+    </div>
+  </div>
+  <!-- End Settings Box -->
+  <!-- Start Navigation Bar -->
+  <section id="navigation-bullets">
+    <div class="bullet" data-section="about">
+      <div class="tooltip">About Us</div>
+    </div>
+    <div class="bullet" data-section="skills">
+      <div class="tooltip">Our Skills</div>
+    </div>
+    <div class="bullet" data-section="gallery">
+      <div class="tooltip">Our Gallary</div>
+    </div>
+    <div class="bullet" data-section="timeline">
+      <div class="tooltip">TimeLine</div>
+    </div>
+    <div class="bullet" data-section="feature">
+      <div class="tooltip">Features</div>
+    </div>
+    <div class="bullet" data-section="testimonial">
+      <div class="tooltip">Testimonial</div>
+    </div>
+  </section>
+  <!-- End Navigation Bar -->
+  <!-- Start Landing Page -->
+  <header id="landing">
+    <div class="overlay"></div>
+    <div class="container">
+      <nav>
+        <div class="logo">Traning JS</div>
+        <div class="links-container">
+          <ul class="links">
+            <li><a class="active navBar" href="#" data-section="about">About</a></li>
+            <li><a href="#" data-section="skills" class="navBar">Skills</a></li>
+            <li><a href="#" data-section="gallery" class="navBar">Gallery</a></li>
+            <li><a href="#" data-section="timeline" class="navBar">Timeline</a></li>
+            <li><a href="#" data-section="feature" class="navBar">Features</a></li>
+            <li><a href="#" data-section="testimonial" class="navBar">Testimonial</a></li>
+          </ul>
+          <i class="fa-solid fa-bars-staggered bars"></i>
+        </div>
+      </nav>
+      <div class="introduction">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi mollitia reiciendis fuga? Error, eveniet
+          deleniti?</p>
+      </div>
+    </div>
+  </header>
+  <!-- End Landing Page -->
+  <!-- Start About Us Section -->
+  <section class="nav-bullets" id="about" data-section="about">
+    <div class="container">
+      <div class="about-wapper">
+        <div class="info">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi ea, eum, placeat reprehenderit odio
+            minima inventore expedita atque quibusdam, obcaecati itaque iusto iure qui?
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/about.jpg" alt="about-us">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Us Section -->
+  <!-- Start Skills Section -->
+  <section class="nav-bullets" id="skills" data-section="skills">
+    <div class="container">
+      <h2>Our Skills</h2>
+      <div class="skill-box">
+        <div class="skill-name">HTML</div>
+        <div class="skill-progress">
+          <span id="html" data-progress="85%"></span>
+        </div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-name">CSS</div>
+        <div class="skill-progress">
+          <span id="css" data-progress="90%"></span>
+        </div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-name">JAVASCRIPT</div>
+        <div class="skill-progress">
+          <span id="js" data-progress="70%"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Skills Section -->
+  <!-- Start Gallary Section -->
+  <section class="nav-bullets" id="gallery" data-section="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="images-box">
+        <img src="images/1.jpg" alt="image one">
+        <img src="images/2.jpg" alt="image two">
+        <img src="images/3.jpg" alt="image three">
+        <img src="images/4.jpg" alt="image four">
+        <img src="images/5.jpg" alt="image five">
+        <img src="images/6.jpg" alt="image six">
+        <img src="images/7.jpg" alt="image seven">
+        <img src="images/8.jpg" alt="image eight">
+        <img src="images/9.jpg" alt="image nine">
+        <img src="images/10.jpg" alt="image ten">
+      </div>
+      <!-- <div class="image-popup">
+        <div class="overlay"></div>
+        <div class="image"></div>
+      </div> -->
+    </div>
+  </section>
+  <!-- End Gallary Section -->
+  <!-- Start TimeLine Section -->
+  <section class="nav-bullets" id="timeline" data-section="timeline">
+    <div class="container">
+      <h2>TimeLine</h2>
+      <div class="timeline-content">
+        <span class="date">2018</span>
+        <div class="box-left">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam labore numquam asperiores ipsa
+              dolores
+              reprehenderit quidem officiis sit earum?</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="box-right">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam labore numquam asperiores ipsa
+              dolores
+              reprehenderit quidem officiis sit earum?</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <span class="date">2016</span>
+        <div class="box-left">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam labore numquam asperiores ipsa
+              dolores
+              reprehenderit quidem officiis sit earum?</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="box-right">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam labore numquam asperiores ipsa
+              dolores
+              reprehenderit quidem officiis sit earum?</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <span class="date">2014</span>
+        <div class="box-left">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam labore numquam asperiores ipsa
+              dolores
+              reprehenderit quidem officiis sit earum?</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="box-right">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam labore numquam asperiores ipsa
+              dolores
+              reprehenderit quidem officiis sit earum?</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End TimeLine Section -->
+  <!-- Start Feature Section -->
+  <section class="nav-bullets" id="feature" data-section="feature">
+    <div class="container">
+      <h2>Our Features</h2>
+      <div class="feature-wrapper">
+        <div class="feat-box">
+          <img src="images/Icon_01.png" alt="">
+          <h4>Data Analysis</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, harum!</p>
+        </div>
+        <div class="feat-box">
+          <img src="images/Icon_02.png" alt="">
+          <h4>Development</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, harum!</p>
+        </div>
+        <div class="feat-box">
+          <img src="images/Icon_03.png" alt="">
+          <h4>Graphic Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, harum!</p>
+        </div>
+        <div class="feat-box">
+          <img src="images/Icon_04.png" alt="">
+          <h4>Development</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, harum!</p>
+        </div>
+        <div class="feat-box">
+          <img src="images/Icon_05.png" alt="">
+          <h4>Marketing</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, harum!</p>
+        </div>
+        <div class="feat-box">
+          <img src="images/Icon_06.png" alt="">
+          <h4>photography</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, harum!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Feature Section -->
+  <!-- Start Testimonial Section -->
+  <section class="nav-bullets" id="testimonial" data-section="testimonial">
+    <div class="container">
+      <h2>Testimonial</h2>
+      <div class="testimonial-content">
+        <div class="ts-box">
+          <p>Lorem ipsum dolor sit amet consectetur, quis explicabo numquam ea porro doloremque perspiciatis aperiam.
+          </p>
+          <div class="ts-subbox">
+            <img src="images/avatar-01.png" alt="">
+            <div class="ts-titlebox">
+              <h4>Ahmed Mosaad</h4>
+              <h5>CEO At Company</h5>
+            </div>
+          </div>
+        </div>
+        <div class="ts-box">
+          <p>Lorem ipsum dolor sit amet consectetur, quis explicabo numquam ea porro doloremque perspiciatis aperiam.
+          </p>
+          <div class="ts-subbox">
+            <img src="images/avatar-02.png" alt="">
+            <div class="ts-titlebox">
+              <h4>Mohamed Ibrahim</h4>
+              <h5>Web Developer</h5>
+            </div>
+          </div>
+        </div>
+        <div class="ts-box">
+          <p>Lorem ipsum dolor sit amet consectetur, quis explicabo numquam ea porro doloremque perspiciatis aperiam.
+          </p>
+          <div class="ts-subbox">
+            <img src="images/avatar-03.png" alt="">
+            <div class="ts-titlebox">
+              <h4>Ashraf Shreef</h4>
+              <h5>Application Developer</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Testimonial Section -->
+  <!-- Start Contact Us Section -->
+  <section id="contact">
+    <div class="overlay"></div>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="">
+        <div class="left">
+          <input type="text" placeholder="Your Name" name="username">
+          <input type="number" placeholder="Your Phone" name="phone">
+          <input type="email" placeholder="Your Email" name="email">
+          <input type="text" placeholder="Subject" name="subjecy">
+        </div>
+        <div class="right">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- End Contact Us Section -->
+  <!-- Start Footer Section -->
+  <section id="footer">
+    Created By Rimon Ramzy
+  </section>
+  <!-- End Footer Section -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
